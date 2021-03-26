@@ -24,13 +24,13 @@ type Props = {
   description: string
 }
 
-const ProfileCard: React.FC<Props> = ({
+const ProfileCard = ({
   name,
   role,
   image,
   socialLinks,
   description
-}) => (
+}: Props) => (
   <S.Card key={name}>
     <S.Image>
       <source

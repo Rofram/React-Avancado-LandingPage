@@ -8,7 +8,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const CardModule: React.FC<Props> = ({ title, subTitle, children }) => (
+const CardModule = ({ title, subTitle, children }: Props) => (
   <S.Card>
     <S.TitleWrapper>
       <S.Title>{title}</S.Title>

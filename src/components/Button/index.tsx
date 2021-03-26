@@ -10,13 +10,7 @@ type Props = {
   onClick: () => void
 }
 
-const Button: React.FC<Props> = ({
-  children,
-  wide,
-  withPrice,
-  href,
-  onClick
-}) => (
+const Button = ({ children, wide, withPrice, href, onClick }: Props) => (
   <S.ButtonWrapper
     href={href}
     wide={wide}

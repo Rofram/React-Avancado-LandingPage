@@ -10,7 +10,7 @@ type Props = {
   description: string
 }
 
-const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
+const ReviewCard = ({ id, name, image, description }: Props) => {
   useEffect(() => {
     const texts = document.querySelectorAll('p.description')
 

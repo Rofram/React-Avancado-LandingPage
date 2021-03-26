@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const Container: React.FC<Props> = ({ children, id }) => (
+const Container = ({ children, id }: Props) => (
   <S.Container id={id}>{children}</S.Container>
 )
 
